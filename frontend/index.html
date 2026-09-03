@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Rental Marketplace</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>RentWear</h1>
+        <p>Rent Your Perfect Outfit</p>
+    </header>
+
+    <main>
+        <div class="clothing-container">
+
+            <div class="card">
+                <h2>Designer Dress</h2>
+                <p>₹500 per day</p>
+                <button onclick="selectClothing('Designer Dress', 500)">
+                    Rent Now
+                </button>
+            </div>
+
+            <div class="card">
+                <h2>Wedding Suit</h2>
+                <p>₹800 per day</p>
+                <button onclick="selectClothing('Wedding Suit', 800)">
+                    Rent Now
+                </button>
+            </div>
+
+            <div class="card">
+                <h2>Traditional Wear</h2>
+                <p>₹400 per day</p>
+                <button onclick="selectClothing('Traditional Wear', 400)">
+                    Rent Now
+                </button>
+            </div>
+
+        </div>
+
+        <div class="booking-section">
+            <h2>Book Your Clothing</h2>
+
+            <p id="selectedItem">No clothing selected</p>
+
+            <label>Rental Days:</label>
+            <input type="number" id="days" min="1" placeholder="Enter days">
+
+            <button onclick="bookClothing()">Confirm Booking</button>
+
+            <h3 id="result"></h3>
+        </div>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
